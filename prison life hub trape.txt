@@ -1,0 +1,71 @@
+-- Prison life hub by TrapeZ
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local Infyeild = Instance.new("TextButton")
+local septexadmin = Instance.new("TextButton")
+local FEsa = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 4, 255)
+main.Position = UDim2.new(0, 0, 0.371485919, 0)
+main.Size = UDim2.new(0, 256, 0, 166)
+main.Active = true
+main.Draggable = true
+
+TextBox.Parent = main
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+TextBox.Size = UDim2.new(0, 256, 0, 21)
+TextBox.Font = Enum.Font.Bangers
+TextBox.Text = "Fourklift Prison life hub by TrapeZ Exploitz"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+Infyeild.Name = "Inf yeild"
+Infyeild.Parent = main
+Infyeild.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Infyeild.BorderColor3 = Color3.fromRGB(85, 170, 0)
+Infyeild.Position = UDim2.new(0.0390625, 0, 0.234939754, 0)
+Infyeild.Size = UDim2.new(0, 98, 0, 50)
+Infyeild.Font = Enum.Font.Bangers
+Infyeild.Text = "Infinite yeild"
+Infyeild.TextColor3 = Color3.fromRGB(255, 255, 255)
+Infyeild.TextSize = 14.000
+Infyeild.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+septexadmin.Name = "septex admin"
+septexadmin.Parent = main
+septexadmin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+septexadmin.Position = UDim2.new(0.51953125, 0, 0.234939754, 0)
+septexadmin.Size = UDim2.new(0, 98, 0, 50)
+septexadmin.Font = Enum.Font.Bangers
+septexadmin.Text = "Admin commands"
+septexadmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+septexadmin.TextSize = 14.000
+septexadmin.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/PrisonLife'),true))()
+end)
+
+FEsa.Name = "FE sa"
+FEsa.Parent = main
+FEsa.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FEsa.Position = UDim2.new(0.2734375, 0, 0.614457786, 0)
+FEsa.Size = UDim2.new(0, 98, 0, 50)
+FEsa.Font = Enum.Font.Bangers
+FEsa.Text = "FE server admin"
+FEsa.TextColor3 = Color3.fromRGB(255, 255, 255)
+FEsa.TextSize = 14.000
+FEsa.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+end)
